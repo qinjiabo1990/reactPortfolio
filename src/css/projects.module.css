@@ -1,0 +1,10 @@
+.projects{
+	background-color: #e9d5a1;
+	min-height: 650px;
+	width: 100%;
+}
+
+.projectsTitle{
+	padding: 80px 0;
+	letter-spacing: 3px;
+}

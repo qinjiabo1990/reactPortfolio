@@ -1,0 +1,25 @@
+.card {
+	width: 500px;
+	height: 330px;
+	box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+	background-color: white;
+}
+
+.cardImg {
+	width: 480px;
+	height: auto;
+	padding: 10px 0;
+}
+
+.cardTitle {
+	padding: 10px 0 5px;
+	font-size: 20px;
+}
+
+.seeLive {
+	font-size: 16px;
+}
+
+.seeLive:hover {
+	text-decoration: underline;
+}
