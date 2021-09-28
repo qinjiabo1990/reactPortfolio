@@ -3,11 +3,12 @@ import Logo from '../assets/images/logo.png'
 import styles from '../css/header.module.css'
 import Typing from 'react-typing-animation';
 import { Switch } from 'antd';
+import logo from '../assets/images/logo.png'
 
 const Header: React.FC = () => {
 	return (
 		<div className={styles.header}>
-			<div>
+			<div className={styles.github}>
 				<a href="https://github.com/qinjiabo1990/" target='_blank' className={styles.githubCorner} aria-label="View source on GitHub">
 					<svg width="100" height="100"
 						viewBox="0 0 250 250"
@@ -30,7 +31,7 @@ const Header: React.FC = () => {
 				</Typing>
 			</div>
 			<div >
-				<Switch checkedChildren="开启" unCheckedChildren="关闭" defaultChecked />
+				<Switch checkedChildren="DAY" unCheckedChildren="NIGHT" />
 			</div>
 		</div>
 	)

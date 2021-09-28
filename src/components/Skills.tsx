@@ -1,12 +1,29 @@
-import React from 'react'
+import React from 'react';
+import styles from '../css/skills.module.css'
+import SkillCard from './SkillCard';
+import logo from '../assets/images/mongodb-icon.svg'
+
+const projectList = [
+	{imgSrc: logo, name: 'mongodb'},
+	{imgSrc: logo, name: 'mongodb'},
+	{imgSrc: logo, name: 'mongodb'},
+	{imgSrc: logo, name: 'mongodb'},
+	{imgSrc: logo, name: 'mongodb'},
+	{imgSrc: logo, name: 'mongodb'},
+	{imgSrc: logo, name: 'mongodb'},
+	{imgSrc: logo, name: 'mongodb'},
+	{imgSrc: logo, name: 'mongodb'},
+]
 
 const Skills: React.FC = () => {
 	return (
-		<div>
-			<h2>SKILLS</h2>
-			<p>HTML 5</p>
-			<p>CSS 3</p>
-			<p>TypeScript</p>
+		<div className={styles.skills}>
+			<h2 className={styles.skillsTitle}>SKILLS</h2>
+			<div className={styles.skillIconList}>
+				{projectList.map((d)=>(
+					<SkillCard imgSrc={d.imgSrc} name={d.name} />
+				))}
+			</div>
 		</div>
 	)
 }

@@ -7,12 +7,13 @@
 	padding-bottom: 20px;
 }
 
-.footerIcon {
+.footerSocial {
 	margin: 50px 0 20px;
 	font-size: 22px;
 }
 
-.icon {
-	padding: 0 15px;
+.footerIcon {
+	margin: 0 15px;
+	font-size: 24px;
 	color: #fff;
 }

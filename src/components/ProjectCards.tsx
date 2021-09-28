@@ -1,13 +1,18 @@
 import React from 'react'
 import styles from '../css/projectCard.module.css'
-import pt from '../assets/images/pt.png'
 
-const ProjectCards: React.FC = () => {
+interface projectCardProps {
+	imgSrc: string,
+	title: string,
+	link: string,
+}
+
+const ProjectCards: React.FC<projectCardProps> = ({imgSrc, title, link }) => {
 	return (
 		<div className={styles.card}>
-			<img className={styles.cardImg} src={pt} alt="PT" />
-			<h3 className={styles.cardTitle}>{`Healthy Pursuits Personal Training`}</h3>
-			<p className={styles.seeLive}><a href={``}>SEE IT LIVE →</a></p>
+			<img className={styles.cardImg} src={imgSrc} alt={title} />
+			<h3 className={styles.cardTitle}>{title}</h3>
+			<p className={styles.seeLive}><a href={link}>SEE IT LIVE →</a></p>
 		</div>
 	)
 }

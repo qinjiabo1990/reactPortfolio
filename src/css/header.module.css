@@ -4,6 +4,10 @@
 		font-size: 130%;
 }
 
+.github a:hover{
+	color: white;
+}
+
 .logo {
     width: 150px;
     height: 150px;

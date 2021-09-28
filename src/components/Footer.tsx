@@ -5,9 +5,9 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 const Footer: React.FC = () => {
 	return (
 		<div className={styles.footer}>
-			<div className={styles.footerIcon}>
-				<a href="https://github.com/qinjiabo1990/" target="_blank"><FaGithub className={styles.icon} /></a>
-				<a href="https://www.linkedin.com/in/jiaboqin/" target="_blank"><FaLinkedin className={styles.icon} /></a>
+			<div className={styles.footerSocial}>
+				<a href="https://github.com/qinjiabo1990/" target="_blank"><FaGithub className={styles.footerIcon} /></a>
+				<a href="https://www.linkedin.com/in/jiaboqin/" target="_blank"><FaLinkedin className={styles.footerIcon} /></a>
 			</div>
 			<p>Copyright © Bob Qin</p>
 		</div>
