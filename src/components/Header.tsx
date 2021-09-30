@@ -11,7 +11,6 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({onChangeFunction, pageStatus}) => {
-	console.log(pageStatus)
 	return (
 		<div className={pageStatus ? styles.header_dark : styles.header_light}>
 			<div className={styles.github}>
