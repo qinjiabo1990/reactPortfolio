@@ -5,9 +5,15 @@ import Typing from 'react-typing-animation';
 import { Switch } from 'antd';
 import logo from '../assets/images/logo.png'
 
-const Header: React.FC = () => {
+interface HeaderProps {
+	onChangeFunction: any;
+	pageStatus: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({onChangeFunction, pageStatus}) => {
+	console.log(pageStatus)
 	return (
-		<div className={styles.header}>
+		<div className={pageStatus ? styles.header_dark : styles.header_light}>
 			<div className={styles.github}>
 				<a href="https://github.com/qinjiabo1990/" target='_blank' className={styles.githubCorner} aria-label="View source on GitHub">
 					<svg width="100" height="100"
@@ -24,14 +30,14 @@ const Header: React.FC = () => {
 				</a>
 			</div>
 			<div className={styles.headerLogo}>
-				<img className={styles.logo} src={Logo} alt="logo" />
+				<img className={styles.logo} src={logo} alt="logo" />
 				<Typing speed={100}>
-					<h1>Bob Qin</h1>
-					<h2>FULL STACK DEVELOPER</h2>
+					<h1 className={pageStatus ? styles.logoText_dark : styles.logoText_light}>Bob Qin</h1>
+					<h2 className={pageStatus ? styles.logoText_dark : styles.logoText_light}>FULL STACK DEVELOPER</h2>
 				</Typing>
 			</div>
-			<div >
-				<Switch checkedChildren="DAY" unCheckedChildren="NIGHT" />
+			<div>
+				<Switch onChange={onChangeFunction} checkedChildren="LIGHT" unCheckedChildren="DARK" />
 			</div>
 		</div>
 	)
