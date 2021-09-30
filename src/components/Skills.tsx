@@ -1,19 +1,27 @@
 import React from 'react';
 import styles from '../css/skills.module.css'
 import SkillCard from './SkillCard';
-import logo from '../assets/images/mongodb-icon.svg'
+import sass from '../assets/images/sass.png'
+import react from '../assets/images/react.png'
+import node from '../assets/images/node.png'
+import mongodb from '../assets/images/mongodb.png'
+import js from '../assets/images/js.png'
+import ts from '../assets/images/ts.png'
+import bootstrap from '../assets/images/bootstrap.png'
+import aws from '../assets/images/aws.png'
+import docker from '../assets/images/docker.png'
 import {appState} from '../App'
 
 const projectList = [
-	{imgSrc: logo, name: 'mongodb'},
-	{imgSrc: logo, name: 'mongodb'},
-	{imgSrc: logo, name: 'mongodb'},
-	{imgSrc: logo, name: 'mongodb'},
-	{imgSrc: logo, name: 'mongodb'},
-	{imgSrc: logo, name: 'mongodb'},
-	{imgSrc: logo, name: 'mongodb'},
-	{imgSrc: logo, name: 'mongodb'},
-	{imgSrc: logo, name: 'mongodb'},
+	{imgSrc: react, name: 'React'},
+	{imgSrc: node, name: 'NodeJs'},
+	{imgSrc: mongodb, name: 'MongoDB'},
+	{imgSrc: js, name: 'JavaScript'},
+	{imgSrc: ts, name: 'TypeScript'},
+	{imgSrc: sass, name: 'Sass'},
+	{imgSrc: bootstrap, name: 'Bootstrap'},
+	{imgSrc: aws, name: 'AWS'},
+	{imgSrc: docker, name: 'Docker'},
 ]
 
 const Skills: React.FC<appState> = ({pageStatus}) => {

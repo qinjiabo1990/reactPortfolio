@@ -2,13 +2,15 @@ import React from 'react'
 import ProjectCards from './ProjectCards'
 import styles from '../css/projects.module.css'
 import pt from '../assets/images/pt.png'
+import besttraveller from '../assets/images/besttraveller.png'
+import weather from '../assets/images/weather.png'
 import {appState} from '../App'
 
 
 const projectList = [
+	{ image: besttraveller, title: 'Best Traveller', link: 'http://bestravellers.com/' },
 	{ image: pt, title: 'Healthy Pursuits Personal Training', link: 'https://healthypursuitspt.com/' },
-	{ image: pt, title: 'Healthy Pursuits Personal Training', link: 'https://healthypursuitspt.com/' },
-	{ image: pt, title: 'Healthy Pursuits Personal Training', link: 'https://healthypursuitspt.com/' },
+	{ image: weather, title: 'BQ Weather', link: 'http://bqweatherapp.s3-website-ap-southeast-2.amazonaws.com/' },
 ]
 
 const Projects: React.FC<appState> = ({pageStatus}) => {

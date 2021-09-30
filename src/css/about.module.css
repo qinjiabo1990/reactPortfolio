@@ -109,3 +109,12 @@
 	font-size: 16px;
 	color: #fff;
 }
+
+@media (max-width: 1024px) {
+	.image, .image_dark {
+		margin-bottom: 30px;
+	}
+	.intro, .intro_dark {
+		margin: 0 20px 40px;
+	}
+}
