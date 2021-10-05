@@ -16,12 +16,12 @@ const projectList = [
 	{imgSrc: react, name: 'React'},
 	{imgSrc: node, name: 'NodeJs'},
 	{imgSrc: mongodb, name: 'MongoDB'},
-	{imgSrc: js, name: 'JavaScript'},
 	{imgSrc: ts, name: 'TypeScript'},
-	{imgSrc: sass, name: 'Sass'},
-	{imgSrc: bootstrap, name: 'Bootstrap'},
+	// {imgSrc: js, name: 'JavaScript'},
 	{imgSrc: aws, name: 'AWS'},
 	{imgSrc: docker, name: 'Docker'},
+	{imgSrc: sass, name: 'Sass'},
+	{imgSrc: bootstrap, name: 'Bootstrap'},
 ]
 
 const Skills: React.FC<appState> = ({pageStatus}) => {
