@@ -25,7 +25,7 @@ const About: React.FC<appState> = ({ pageStatus }) => {
 						</div>
 						<div className={styles.myself}>
 							<h2 className={pageStatus ? styles.introTitle_dark : styles.introTitle}>Hi</h2>
-							<p className={pageStatus ? styles.introContent_dark : styles.introContent}>👋 I'm Bob. Fictional person for preview purposes. I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you!</p>
+							<p className={pageStatus ? styles.introContent_dark : styles.introContent}>👋 I'm Bob. A proactive and self-motivated developer. I have proven ability and rich experience from multiple projects and work knowledge with coding. With my excellent time management skill, advanced planning ability, and solid learning capability, I look forward to embracing my next challenge. Thank you!</p>
 						</div>
 					</div>
 				</div>
