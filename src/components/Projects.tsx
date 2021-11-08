@@ -8,7 +8,7 @@ import {appState} from '../App'
 
 
 const projectList = [
-	{ image: besttraveller, title: 'Best Traveller', link: 'http://bestravellers.com/' },
+	{ image: besttraveller, title: 'Best Traveller', link: 'http://bestravellers.net/' },
 	{ image: pt, title: 'Healthy Pursuits Personal Training', link: 'https://healthypursuitspt.com/' },
 	{ image: weather, title: 'BQ Weather', link: 'http://bqweatherapp.s3-website-ap-southeast-2.amazonaws.com/' },
 ]
